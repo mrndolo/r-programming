@@ -35,4 +35,29 @@ Has a great community
 Over 9000+ packages
 "This is R. There is no if, only how"
 
+## About Packages
+Packages are bundles of code that adds new functions to R
+Base packages - are Installed with R but not loaded by default
+Contributes packages - need to be downloaded, installed & loaded separately
+
+## Where to get packages
+1. CRAN - Comprehensive R Archive Network
+2. Crantastic
+3. GitHub
+
+## Most popular packages
+dplyr - manipulating data frames
+tidyr - cleaning up information
+stringr - working with string data
+lubridate - manipulating date information
+httr - working with website data
+ggvis - (Grammar of Graphic) for interactive visualizations
+ggplot2 - creating graphics or data visualizations in R
+shiny - create interactive applications that you can install on websites
+rio - R input Output for importing and exporting data
+rmarkdown - creates interactive notebooks/rich documents
+pacman - one package to load them all
+
+
+
 
