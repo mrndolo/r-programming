@@ -35,3 +35,9 @@ x
 #generate a sequence of a specified length
 x<-seq(from=-1,to=1,length=6)
 x
+#repeating elements in a vector
+#repeat each element of the vector (2 to 5) three times
+x<-rep(2:5, each=3)
+x
+x<-rep(1:3, each=2)
+x
