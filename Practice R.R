@@ -41,3 +41,27 @@ x<-rep(2:5, each=3)
 x
 x<-rep(1:3, each=2)
 x
+
+#handling special values
+#creating a vector with special values
+#special values include inf(infinity), -inf(negative infinity), and NaN (not a number)
+v <- c(0,Inf,-Inf,NaN)
+v
+#checking for finite values
+#returns true for finite values
+is.finite(v)
+is.nan(v)
+is.na(v)
+#combining vectors
+x<-1:10
+y<-11:20
+rbind(x,y)
+cbind(x,y)
+#subsetting also known as slicing
+#indexing starts from 1
+x<-c(5,9,2,14,-4)
+x[3]
+x[3:length(x)]
+#coercion
+x<-c("1","b","3")
+as.numeric(x)
