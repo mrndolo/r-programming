@@ -65,3 +65,16 @@ x[3:length(x)]
 #coercion
 x<-c("1","b","3")
 as.numeric(x)
+#FACTORS
+#Factors are useful for storing categorical data
+#Creating a factor
+colors <- factor(c("Red","Blue","Green","Red","Blue"))
+print(colors)
+#checking the levels
+levels(colors)
+#In the background, R stores these levels as integers and keeps a map to keep track of the labels.
+#This is more efficient than storing all the characters
+#Creating an ordered factor
+satisfaction<-factor(c("low","medium","high","medium","low"))
+levels=c("low","medium","high",ordered=TRUE)
+print(satisfaction)
