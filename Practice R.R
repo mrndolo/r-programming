@@ -100,3 +100,60 @@ x%in%y
 #that tells us whether or not each element
 #of a first vector is in a second
 #we can use the function %in%
+
+#SESSION 2
+#Basic programming tools
+#Conditionals
+a<-0
+if(a!=0){
+  print(1/a)
+}else{
+  print("No reciprocal for 0.")
+}
+a<-0
+ifelse(a>0,1/a,NA)
+a<-c(0,1,2,-4,5)
+result<-ifelse(a>0,1/a,NA)
+result
+#functions
+#functions are objects so you can assign them
+avg<-function(x){
+  s<-sum(x)
+  n<-length(x)
+  s/n
+}
+x<-1:100
+avg(x)
+identical(mean(x),avg(x))
+#exercise
+#define a function that computes either the arithmetic or geometric average
+#depending on a user defined variable
+avg <- function(x, arithmetic = TRUE){
+  n <- length(x)
+  ifelse(arithmetic, sum(x)/n, prod(x)^(1/n))
+}
+# loops
+factorial2 = function(n) {
+  out = 1
+  for (i in 1:n) {
+    out = out*i
+  }
+  out
+}
+factorial2(10)
+isPrime = function(n) {
+  i = 2
+  if (n < 2) return(FALSE)
+  while (i < sqrt(n)) {
+    if (n %% i == 0) return(FALSE)
+    i = i+1 }
+  return(TRUE)}
+isPrime(10)
+#loops are slow in R, always try vectorization first
+#loop way
+system.time(for(i in 1:1e6)i^2)
+#vectorization way
+system.time(seq_len(1e6)^2)
+#SAPPLY (perform element wise operations on any function)
+x<-1:10
+sapply(x,sqrt)
