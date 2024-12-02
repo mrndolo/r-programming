@@ -78,3 +78,25 @@ levels(colors)
 satisfaction<-factor(c("low","medium","high","medium","low"))
 levels=c("low","medium","high",ordered=TRUE)
 print(satisfaction)
+#some important functions may be required in data analysis
+#example vector
+x<-c(5,2,9,1,7)
+#get the maximum value
+max(x)
+#get the index of the maximum value
+which.max(x)
+#which
+x<-c(TRUE, FALSE, TRUE, FALSE)
+which(x)
+#match and %in%
+x<-c("a","b","c","a")
+y<-c("b","c","d")
+match(x,y)
+#This function tells us which indexes of a second vector match each of the entries of a first vector
+x<-c("a","b","c","a")
+y<-c("b","c","d")
+x%in%y
+#if rather than an index we want a logical
+#that tells us whether or not each element
+#of a first vector is in a second
+#we can use the function %in%
